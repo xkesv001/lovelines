@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<div class="login">
+    <h3 class="popup--title">Přihlášení</h3>
+    <form method="post">
+        <fieldset class="popup--fieldset">
+            <legend class="hidden">Přihlášení</legend>
+            <div class="login--form">
+                <div class="login--name">
+                    <label class="login-form--title" for="name">Uživatelské jméno</label>
+                    <input class="login-form--input" name="username" value="username">
+                </div>
+                <div class="login--password">
+                    <label class="login-form--title" for="password">Heslo</label>
+                    <input class="login-form--input" type="password" name="password" id="password">
+                </div>
+                <div class="buttons-container">
+                    <button class="login--btn login--btn__login" type="submit" value="Login">Přihlášení</button>
+                    <button class="login--btn login--btn__registration"><a href=registrace.php>Registrace</a></button>
+                    <button class="login--btn__close hidden">Zavřít</button>
+                </div>
+            </div>
+        </fieldset>
+    </form>
+</div>

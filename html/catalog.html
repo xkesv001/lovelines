@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+
+<html lang="cs">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport"
+    content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <link rel="stylesheet" href="css/normalize.css" />
+  <link rel="stylesheet" href="css/style.css" />
+  <title>LOVELINES</title>
+</head>
+
+<body>
+  <header class="header">
+    <h1 class="hidden-abs">Vyhledávání spojů</h1>
+    <button class="menu__close menu--btn hidden">ZAVŘÍT menu</button>
+    <a href="index.php" class="hidden logo menu--logo"><img src="img/logo.png" alt="logotype" width="100"
+        height="100">logotype</a>
+    <nav class="nav">
+      <ul class="menu">
+        <li class="menu--item"><a href="index.php" class="menu-item--link">Hlávní stránka</a></li>
+        <li class="menu--item"><a href="favorite.html" class="menu-item--link">Oblíbené trasy</a></li>
+        <li class="menu--item"><a href="catalog.html" class="menu-item--link menu--item__active">Seznam linek</a></li>
+        <li class="menu--item"><a href="contact.html" class="menu-item--link">Kontakty</a></li>
+        <li class="menu--item"><a href="#login" class="menu-item--link menu--popup-link">Přihlášení</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main class="main">
+    <h3 class="catalog--title">Seznam linek</h3>
+    <section class="catalog--results">
+      <h4 class="hidden-abs">Seznam linek</h4>
+      <div class="catalog--item">
+        <div class="catalog--flex">
+          <p class="catalog--line">301</p>
+          <p class="catalog--direction"> Směr: <span>Kbely - Kobylisy</span></p>
+          <button class="heart hidden" title="Přidat do oblíbených" type="button">Přidat do oblíbených</button>
+        </div>
+      </div>
+      <div class="catalog--item">
+        <div class="catalog--flex">
+          <p class="catalog--line">302</p>
+          <p class="catalog--direction"> Směr: <span>Braník - Petřiny</span></p>
+          <button class="heart hidden" title="Přidat do oblíbených" type="button">Přidat do oblíbených</button>
+        </div>
+      </div>
+      <div class="catalog--item">
+        <div class="catalog--flex">
+          <p class="catalog--line">303</p>
+          <p class="catalog--direction"> Směr: <span>Strahov - Budějovická</span></p>
+          <button class="heart hidden" title="Přidat do oblíbených" type="button">Přidat do oblíbených</button>
+        </div>
+      </div>
+      <div class="catalog--item">
+        <div class="catalog--flex">
+          <p class="catalog--line">304</p>
+          <p class="catalog--direction"> Směr: <span>Suchdol - Kobylisy</span></p>
+          <button class="heart hidden" title="Přidat do oblíbených" type="button">Přidat do oblíbených</button>
+        </div>
+      </div>
+      <div class="catalog--item">
+        <div class="catalog--flex">
+          <p class="catalog--line">305</p>
+          <p class="catalog--direction"> Směr: <span>Kbely - Holešovice</span></p>
+          <button class="heart hidden" title="Přidat do oblíbených" type="button">Přidat do oblíbených</button>
+        </div>
+      </div>
+      <div class="catalog--item">
+        <div class="catalog--flex">
+          <p class="catalog--line">306</p>
+          <p class="catalog--direction"> Směr: <span>Zličín - Háje</span></p>
+          <button class="heart hidden" title="Přidat do oblíbených" type="button">Přidat do oblíbených</button>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="footer">
+    <a href="index.php" class="hidden footer--logo logo"><img src="img/logo.png" alt="logotype" width="100" height="100">logotype</a>
+    <div class="footer--info">
+      <div class="footer-info--text">
+        <p>Informační linka</p>
+        <p>Denně: 7:00 - 21:00</p>
+      </div>
+      <div class="footer--tel">
+        <a href="tel: +420 608 608 608" class="footer-tel--link">+420 608 608 608</a>
+      </div>
+    </div>
+    <div class="footer--creater">
+      <p>Internetové technologie - client side</p>
+      <p>Semestrální projekt 2020</p>
+    </div>
+  </footer>
+  <section class="popup hidden-abs" id="login">
+    <div class="overlay"></div>
+    <div class="login">
+      <h3 class="popup--title">Přihlášení</h3>
+      <form>
+        <fieldset class="popup--fieldset">
+          <legend class="hidden">Přihlášení</legend>
+          <div class="login--form">
+            <div class="login--name">
+            <label class="login-form--title" for="email">Uživatelské jméno</label>
+            <input class="login-form--input" type="email" id="email">
+            </div>
+            <div class="login--password">
+            <label class="login-form--title" for="password">Heslo</label>
+            <input class="login-form--input" type="password" id="password">
+            </div>
+            <div class="buttons-container">
+              <button class="login--btn login--btn__login">Přihlášení</button>
+              <button class="login--btn login--btn__registration">Registrace</button>
+              <button class="login--btn__close hidden">Zavřít</button>
+            </div>
+          </div>
+        </fieldset>
+      </form>
+    </div>
+  </section>
+  <script src="js/main.js"></script>
+</body>
+
+</html>
